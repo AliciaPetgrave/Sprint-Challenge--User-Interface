@@ -29,8 +29,17 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    width:1024px;
+    margin:auto;
 }
+
+.bodycontainer{
+    width: 1024px;
+    margin: auto;
+
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -159,7 +168,7 @@ nav a{
 	text-decoration:none;
     color:black;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
 }
 
 .jumbo-logo{
@@ -167,11 +176,14 @@ nav a{
     justify-content:center;
     margin:20px
 }
-
-nav a .lambda-logo{
-    display:flex;
-    justify-content:flex-start;
+.top-about p{
+    padding-bottom:10px;
 }
+
+.top-about{
+    border-bottom: 1px dashed black;
+}
+
 
 /* BOXES */
 
@@ -302,50 +314,24 @@ hr{
 
 
 /* MIDDLE BOXES */
+.container-about-page{
+    width: 800px;
+    margin: 0 auto;
+}
+
 .middle-section{
     display:flex;
     justify-content:space-between;
-}
-
-.middle-section2{
-    display:flex;
-    justify-content:flex-start;
-    width:50%;
-
-}
-
-.middle-section2 .sec2{
-    margin: 4% 5%;
-    padding: 3% 0%;
-    padding-bottom: 20px;
-    border-bottom:1px dashed black;
-    
-}
-
-.middle-section .sec1{
-    margin: 4% 10%;
-    padding: 3% 0%;
-    padding-bottom: 20px;
-    border-bottom:1px dashed black;
-    
-}
-
-.middle-section2 h2{
-    margin:10px;
-}
-
-.middle-section2 p{
-    margin:10px;
-    padding-bottom: 20px;
-}
-
-.middle-section2 h2{
-    margin:10px;
+    flex-wrap:wrap;
 }
 
 .middle-section p{
     margin:10px;
     padding-bottom: 20px;
+}
+
+.middle-section h2{
+    padding-top:10px;
 }
 
 section a{
@@ -357,11 +343,14 @@ section a{
     margin: 10px;
 }
 
+.sec1{
+    width:46%;
+    border-bottom:1px dashed black;
+    padding-bottom:40px;
+    padding-top:20px;
+}
 
 /* LETS WORK */
-#bottom{
-    margin: 20px;
-    width: 1000px;
-    padding: 10px;
-
+.bottom{
+    margin: 30px;
 }
